@@ -1,0 +1,77 @@
+#about-us {
+    padding: 40px 0;
+}
+
+#about-us h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--secondary-text-color);
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap; /* Чтобы на маленьких экранах контент переносился */
+    align-items: center;
+    gap: 30px;
+}
+
+.about-image {
+    flex: 1 1 300px; /* Занимает 300px или 1/3 пространства */
+    max-width: 400px;
+    margin: 0 auto; /* Центрируем изображение */
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1 1 400px; /* Занимает 400px или 1/3 пространства */
+}
+
+.about-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--secondary-text-color);
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--default-text-color);
+}
+
+#why-choose-us {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+#why-choose-us h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--secondary-text-color);
+}
+
+#why-choose-us ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* Центрируем список */
+    max-width: 600px; /* Ограничиваем ширину списка */
+}
+
+#why-choose-us li {
+    font-size: 1.1rem;
+    color: var(--default-text-color);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#why-choose-us i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}

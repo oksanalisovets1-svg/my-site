@@ -1,0 +1,242 @@
+/* Общие переменные */
+:root {
+    --section-padding: 40px 0;
+    --section-margin-bottom: 30px;
+    --heading-margin-bottom: 20px;
+    --default-text-color: #495057;
+    --secondary-text-color: #343a40;
+    --primary-color: #0056b3;
+}
+
+/* Общие стили для секций */
+section {
+    margin-bottom: var(--section-margin-bottom);
+}
+
+/* Секция Цены */
+#prices {
+    padding: var(--section-padding);
+}
+
+#prices h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: var(--heading-margin-bottom);
+    color: var(--secondary-text-color);
+}
+
+#prices h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--heading-margin-bottom);
+    color: var(--secondary-text-color);
+}
+
+.price-info {
+    text-align: center;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.price-info i {
+    margin-right: 5px;
+}
+
+.price-section {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-top: 1px solid #eee;
+}
+
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 -4px 6px -4px rgba(0,0,0,0.1);
+    min-width: 600px; /* минимальная ширина, чтобы не сжималась слишком */
+}
+
+th,
+td {
+    padding: 10px 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    width: 150px;
+    max-width: 200px;
+    word-break: break-word;
+}
+
+th {
+    background: linear-gradient(to bottom, var(--primary-color) 0%, #3378c4 100%);
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #004a99;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+th:last-child,
+td:last-child {
+    border-right: none;
+}
+
+td {
+    border-right: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e0f2f7;
+}
+
+#additional-options {
+    margin-top: 0; /* убрали отрицательный отступ */
+    margin-bottom: 40px;
+    padding: 20px 15px;
+    background-color: #f9fbff; /* светлый фон */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+#additional-options h2 {
+    font-size: 1.5rem; /* чуть крупнее */
+    margin-bottom: var(--heading-margin-bottom);
+    color: var(--secondary-text-color);
+    padding-bottom: 8px; /* небольшой отступ снизу */
+}
+
+.options-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.options-list li {
+    font-size: 1.05rem;
+    color: var(--default-text-color);
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.options-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.option-price {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-left: 5px;
+}
+
+
+
+/* Секция Как заказать */
+#how-to-order {
+    margin-top: -20px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+#how-to-order h2 {
+    font-size: 1.3rem;
+    margin-bottom: var(--heading-margin-bottom);
+    color: var(--secondary-text-color);
+    text-align: center;
+}
+
+.order-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.order-step {
+    text-align: center;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.order-step h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: var(--secondary-text-color);
+    margin-top: 20px;
+}
+
+.order-step p {
+    font-size: 0.9rem;
+    color: var(--default-text-color);
+}
+
+.order-number {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 25px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+tbody td:first-child {
+    font-weight: 600;
+    color: #2c3e50; /* чуть темнее var(--secondary-text-color) */
+    background-color: rgba(230, 240, 255, 0.4); /* очень светлый голубой фон */
+    border-left: 1.5px solid #ddd;  /* левая граница */
+    border-right: 1.5px solid #ddd; /* правая граница */
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover td:first-child {
+    background-color: #e0f2f7; /* совпадает с hover всего ряда */
+}
+
+
+/* Адаптив для мобильных */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.85rem;
+        min-width: 500px; /* чуть меньше, чем на десктопе */
+    }
+    th,
+    td {
+        padding: 6px 8px;
+        width: auto;
+        min-width: 80px; /* чтобы столбцы не были слишком узкими */
+    }
+    /* Можно ещё усилить видимость разделителей */
+    th, td {
+        border-bottom: 1px solid #ccc;
+    }
+}

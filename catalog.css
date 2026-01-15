@@ -1,0 +1,84 @@
+/* Общие стили для каталога */
+#catalog {
+    padding: 40px 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Адаптивная сетка */
+    gap: 30px;
+}
+
+.product-item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    object-fit: contain; /* contain или cover */
+    max-height: 220px; /*  Увеличиваем максимальную высоту изображения */
+    width: 100%; /* Добавляем width: 100% */
+}
+
+.product-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #495057;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* Медиа-запрос для больших экранов (4 колонки) */
+@media (min-width: 992px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 колонки на больших экранах */
+    }
+
+    .product-item img {
+        max-height: 180px; /* Подстраиваем высоту на больших экранах */
+    }
+}
+
+/* Медиа-запрос для средних экранов (3 колонки) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 колонки на средних экранах */
+    }
+
+    .product-item img {
+        max-height: 200px; /* Подстраиваем высоту на средних экранах */
+    }
+}
+
+/* Мобильная адаптация (1 колонка) */
+@media (max-width: 767px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* 1 колонка на мобильных */
+    }
+
+    .product-item img {
+        max-height: 220px; /* Подстраиваем высоту на мобильных */
+    }
+}
