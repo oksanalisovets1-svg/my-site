@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - BadgeLenta</title>
+    <meta name="description" content="Свяжитесь с нами по телефону, электронной почте или через WhatsApp.">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+   <header>
+    <div class="container">
+        <a href="/" class="logo">BadgeLenta</a>
+        <div class="nav-wrapper">  <!-- Обертка для навигации -->
+            <nav>
+                <ul>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="prices.html">Цены</a></li>
+                    <li><a href="samples.html">Образцы</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+    <main>
+        <section id="contact-info">
+            <div class="container">
+                <h1>Контактная информация</h1>
+                <p>Мы всегда рады помочь вам с любыми вопросами! Свяжитесь с нами удобным для вас способом.</p>
+
+                <div class="contact-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <div class="contact-item-content">
+        <span class="contact-label">Адрес:</span>
+        <div class="address-wrapper">  <!-- Добавлена обертка -->
+            <p class="contact-value">123456, Москва, ул. Примерная, д. 10</p>
+        </div>
+    </div>
+</div>
+
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="contact-item-content">
+                            <span class="contact-label">Режим работы:</span>
+                            <p class="contact-value">Пн-Пт: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-item-content">
+                            <span class="contact-label">Телефон:</span>
+                            <p class="contact-value"><a href="tel:+79106074982">+7 (910) 607-49-82</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-item-content">
+                            <span class="contact-label">Email:</span>
+                            <p class="contact-value"><a href="mailto:Lanyardrf@mail.ru">Lanyardrf@mail.ru</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div class="contact-item-content">
+                            <span class="contact-label">WhatsApp:</span>
+                            <p class="contact-value"><a href="https://wa.me/79106074982" target="_blank">Написать в WhatsApp</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form">
+            <div class="container">
+                <h2>Напишите нам</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Отправить сообщение</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2023 BadgeLenta. Все права защищены.
+        </div>
+    </footer>
+
+</body>
+</html>
